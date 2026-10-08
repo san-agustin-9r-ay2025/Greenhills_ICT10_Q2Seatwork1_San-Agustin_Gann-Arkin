@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nickname Atlas</title>
+
+    <!-- START OF CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- START OF BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- START OF PYTHON -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body class="bg-light">
+    <header class="bg-light text-info text-center p-3">
+        <h1>
+            East Asia
+        </h1>
+    </header>
+        <div class="container-fluid text-center p-5" id="main">
+            <div class="row">
+                <h3 class="text-warning">
+                    The Nickname Atlas of East Asia
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                    every nations earned its nickname: culture-wise, history-wise, religion-wise.
+                </p>
+            </div>
+            <div class="row">
+                <center>
+                    <div class="col-6 bg-light p-4 text-dark" id="input">
+                        <label for="country">type country name here:</label>
+                        <select id="country" class="form-control">
+                            <option value="The Middle Kingdom">China</option>
+                            <option value="Tiger of Asia">South Korea</option>
+                            <option value="Hermit Kingdom">North Korea</option>
+                            <option value="The Land of the Rising Sun">Japan</option>
+                            <option value="Land of the Eternal Blue Sky">Mongolia</option>
+                        </select>
+                        <input type="button" py-click="inputUser" class="form-control btn btn-success mt-4" value="Enter">
+                    </div>
+                </center>
+            </div>
+        </div>
+        <center>
+            <div id="output" class="bg-info text-dark mt-5 p-2">
+
+            </div>
+        </center>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>

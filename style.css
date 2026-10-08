@@ -1,0 +1,10 @@
+#main {
+    background-image: url(thanh_nguyen_slq-korea-6757629_1920.jpg);
+}
+
+#input {
+    /* used this website */
+    border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+}
